@@ -1,0 +1,25 @@
+// задача #2
+
+function factroial(n) {
+    if(n==1) return 1;
+    return n*factroial(n-1);
+}
+alert(factroial(5));
+
+//задача #1 1 вариант
+
+function sumTo(n) {
+    if(n==1) return 1;
+    return n+sumTo(n-1);
+}
+alert(sumTo(5))
+
+//задача #1 2 вариант
+
+var sum=0;
+var n=0;
+while(n<=5) {
+    sum=sum+n;
+    n++;
+}
+alert(sum);
