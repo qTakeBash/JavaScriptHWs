@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function getSumsArray(array) {
+        var result = [];
+        if (!array.length) return result;
+
+        var totalSum = array.reduce(function(sum,current) {
+            result.push(sum);
+            return sum + current;
+        });
+        result.push(totalSum);
+
+        return result;
+    }
+    alert(getSumsArray([1,2,3,4,5]));
+</script>

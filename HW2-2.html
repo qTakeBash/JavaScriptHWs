@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    var obj = {
+        className: 'block menu'
+    }
+
+    function addClass(obj, s) {
+        if (obj.className.indexOf(s) == -1) {
+            obj.className = obj.className + ' ' + s;
+        }
+    }
+    function deleteClass(obj, s) {
+        obj.className = obj.className.replace(new RegExp(s,'g'), " ")
+    }
+    addClass(obj, 'new-block');
+    addClass(obj, 'block');
+    addClass(obj, 'blue');
+    deleteClass(obj, "new")
+    alert(obj.className); // "block menu new-block blue"
+
+</script>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    var sum = 0;
+    var array = [];
+    function promptArray() {
+
+        var k = parseInt(prompt("Введите число"));
+        //var sum = k;
+        while (k) {
+            array[array.length] = parseInt(k);
+            k = parseInt(prompt("Введите число"));
+            //sum+=k;
+            if (k == 0) break;
+
+        }
+
+        for(var i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        alert(sum);
+    }
+
+    promptArray();
+</script>
